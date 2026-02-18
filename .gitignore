@@ -1,0 +1,15 @@
+# --- Python / Flask (сервер) ---
+__pycache__/
+*.py[cod]
+*$py.class
+.Python
+venv/
+.venv/
+env/
+.env
+.env.local
+*.egg-info/
+.eggs/
+dist/
+build/
+*.egg

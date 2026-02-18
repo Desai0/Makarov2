@@ -1,8 +1,8 @@
 from fastapi import APIRouter, Depends, HTTPException, status
 
 from services import NoteService
-from .models import NoteCreate, NoteOut
-from .repositories import NoteRepository
+from models import NoteCreate, NoteOut
+from repositories import NoteRepository
 
 router = APIRouter(prefix="/notes", tags=["notes"])
 

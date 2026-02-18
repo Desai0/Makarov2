@@ -1,9 +1,11 @@
 from typing import Optional
-from .models import NoteOut
-from services import NoteService
+
+from models import NoteOut
+from repositories import NoteRepository
+
 
 class NoteService:
-    def __init__(self, repo: NoteService):
+    def __init__(self, repo: NoteRepository):
         self.repo = repo
 
     def create_note(self, title: str, body: Optional[str]):
@@ -13,4 +15,3 @@ class NoteService:
 
     def get_note(self, note_id: int) -> Optional[NoteOut]:
         return self.repo.get(note_id)
-    
